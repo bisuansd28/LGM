@@ -1,0 +1,80 @@
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+build/
+dist/
+*.egg-info/
+*.egg/
+
+# Local Python environments
+venv/
+.venv/
+env/
+.env/
+conda-env/
+
+# Secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+!.env.sample
+*.local
+
+# Downloaded LGM / diffusion model weights
+pretrained/
+checkpoints/
+weights/
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+*.onnx
+
+# Local input datasets (preserve the repository's data_test/ examples)
+/dataset/
+/datasets/
+/inputs/
+/input_images/
+
+# Inference results / 3D assets / training workspaces
+/workspace/
+/workspace_*/
+/output/
+/outputs/
+/results/
+/inference_results/
+/optimized_outputs/
+
+# Training logs, reports and caches
+logs/
+runs/
+wandb/
+lightning_logs/
+tensorboard/
+events.out.tfevents.*
+.cache/
+.huggingface/
+.gradio/
+
+# Locally cloned optional dependencies (manage separately)
+/diff-gaussian-rasterization/
+/nvdiffrast/
+/gaussian-splatting/
+
+# Windows / editors
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
